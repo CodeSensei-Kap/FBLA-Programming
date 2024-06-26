@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/ae388f0d5c.js" crossorigin="anonymous"></script>
+    <style>
+      body {
+        padding: 0px;
+        background-color: white;
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      
+      .dark-mode {
+        background-color: rgb(15, 15, 15);
+        color: rgb(238, 238, 238);
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+          <li><a class="top" href="home.html">Home</a></li>
+          <li><a class="top" href="unweighted.html">Unweighted Calculator</a></li>
+          <li><a class="top" href="weighted.html">Weighted Calculator</a></li>
+          <li><a class="top" href="school.html">Williamsville East GPA System</a></li>
+          <li><a class="top" href="explanation.html">Importance of GPA</a></li>
+          <li><a class="top" href="history.html">History of the GPA</a></li>
+          <li style="float:right"><a class="top" href="about.html">Code Pics</a></li>
+          </ul>
+      </div>
+      <h1 class = "title">Home</h1>
+      <div class="night" style="margin-left: 1350px; margin-top: -10px;">
+        <i class="fa-solid fa-moon fa-2x" onclick="myFunction()" style="border-radius: 15px; padding: 5px 5px; color: rgb(255, 223, 40);"></i>
+      </div>
+      <h3 style="margin-bottom: 0px; margin-top: -50px;">FBLA Introduction to Programming</h3>
+      <div class= image-container style="margin-left: -600px;">
+        <img src ="Williamsville_East_logo-large.png" style="width: 350px; height: 350px;"> 
+      </div>
+      <h5 class="tbl" style="text-indent: 30px; margin-left: 600px; margin-right: 200px; margin-top: -420px; font-size: x-large;">
+            Dear Users, 
+            this project is made for the FBLA Event we all know as Introduction to Programming!
+            To see how our team developed this web page, please visit the "Code Pics" page. To use our main function (the GPA calculator) you can 
+            visit both the "Unweighted Calculator" and "Weighted Calculator" pages to use both calculators for each type of GPA.
+      </h5>
+      <div class= image-container>
+        <img src ="FBLA_VerticalLogo-1024x792.png" style="margin-top: 40px; margin-right: -600px; width: 400px; height: 300px;"> 
+      </div>
+        <h5 class="tbl" style="text-indent: 30px; margin-left: 230px; margin-right: 600px; margin-top: -380px; font-size: x-large;">
+            We have even included pages which help you to learn about the importance of the GPA system as well as the history behind this very crucial grading system. There 
+            is also a page that explains our own school's GPA system! We hope you have fun exploring this site!
+        </h5>
+      <div class= image-container>
+        <img src ="Screenshot 2024-02-21 184651.png" style="margin-top: 100px;"> 
+      </div>
+      <h5 style="margin-left: 610px; margin-top: 50px; margin-bottom: -30px; font-size: xx-large;">
+        Now, Let's Begin!
+      </h5>
+      <br>
+      <div class="container" style="margin-top: -675px; margin-left: 160px;">
+        <a href="unweighted.html" class="button" style="text-decoration: none; margin-top: 380px; margin-bottom: -400px;">
+           <div class="button__content">
+              <span class="button__text">Begin</span>
+
+              <div class="button__reflection-1"></div>
+              <div class="button__reflection-2"></div>
+           </div>
+
+           <img src="assets/img/star.png" alt="" class="button__star-1">
+           <img src="assets/img/star.png" alt="" class="button__star-2">
+           <img src="assets/img/circle.png" alt="" class="button__circle-1">
+           <img src="assets/img/circle.png" alt="" class="button__circle-2">
+           <img src="assets/img/diamond.png" alt="" class="button__diamond">
+           <img src="assets/img/triangle.png" alt="" class="button__triangle">
+           
+           <div class="button__shadow"></div>
+        </a>
+          <script>
+            function myFunction() {
+              var element = document.body;
+              element.classList.toggle("dark-mode");
+            }
+
+            const nightContainer = document.querySelector(".night");
+            const nightBtn = document.querySelector(".night i");
+
+            nightContainer.addEventListener("click", function() {
+              nightBtn.classList.toggle("fa-sun");
+              nightBtn.classList.toggle("fa-moon");
+            });
+          </script>
+     </div>
+</body>
+</html>

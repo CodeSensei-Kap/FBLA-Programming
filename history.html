@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ae388f0d5c.js" crossorigin="anonymous"></script>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        background-color: white;
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      
+      .dark-mode {
+        background-color: rgb(15, 15, 15);
+        color: rgb(238, 238, 238);
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a class="top" href="home.html">Home</a></li>
+            <li><a class="top" href="unweighted.html">Unweighted Calculator</a></li>
+            <li><a class="top" href="weighted.html">Weighted Calculator</a></li>
+            <li><a class="top" href="school.html">Williamsville East GPA System</a></li>
+            <li><a class="top" href="explanation.html">Importance of GPA</a></li>
+            <li><a class="top" href="history.html">History of the GPA</a></li>
+            <li style="float:right"><a class="top" href="about.html">Code Pics</a></li>
+          </ul>
+    </div>
+    <div">
+        <h1 class = "title">History of the GPA</h1>
+      <div class="night" style="margin-left: 1350px; margin-top: -50px;">
+        <i class="fa-solid fa-moon fa-2x" onclick="myFunction()" style="border-radius: 15px; padding: 5px 5px; color: rgb(255, 223, 40);"></i>
+      </div>
+        <p style="width: 700px; margin-left: 50px;">
+            We frequently discuss how important evaluation, comments, and grading are to both teaching effectiveness and student learning. Furthermore, why not? It's an important intersection that has to be explored and debated in order to keep getting better.
+            Examining our past is crucial in order to understand where our current grading system originated and to inform future innovations. It's also critical to consider the rationale behind the current grading schemes.
+            Since the exchange of knowledge between students and teachers has always been at the heart of education, assessment is nothing new—it has been practiced for centuries. By methodically analyzing student learning patterns to guide future instruction, assessment aims to enhance student learning.
+        </p>
+        <div class="image-row" style="margin-left: 870px; width: 1800px; margin-top: -340px; margin-bottom: 100px;">
+            <img src="gpa-png-2.png">
+        </div>
+        <p style="margin-left: 630px; margin-right: 80px;">
+            Grading, a form of assessment measuring individual student learning, is relatively new in education. Letter grades, evaluative and numerical grading, and grading on a curve gained prominence in the 1940s. By 1971, only 67% of US primary and secondary schools used letter grades. Early student evaluations were formative learning aids without letter or number grades. Harvard mandated exit exams in 1646 for degrees, and Yale's president, Ezra Stiles, established America's first grading system in 1785 with four descriptions: Optimi, Second Optimi, Inferiores, and Perjores. Similar systems appeared in 1817 at other universities like William and Mary. These grading schemes paralleled those in the UK, aiming to avoid competitive atmospheres by concealing grades from students (Schneider & Hutt, 2014; Schinske & Tanner, 2014).
+       </p>
+        <div style="margin-left: 260px; margin-top: -320px;">
+            <img src="ezra-stiles-20757d9a-558d-4c6b-9ec5-1110deb181d-resize-750.jpg" width="1500" height="1500" style="border-width: 6px; border-style: ridge; border-color: rgb(255, 77, 77); border-radius: 8px;">
+        </div>
+        <h2 style="margin-right: 770px;">Ezra Stiles</h2>
+        <p style="margin-left: 50px; width: 700px;">
+            Educators like Horace Mann have long been concerned about the competitive message grading conveys and its impact on children's learning. In his ninth annual report, Mann warned that students might prioritize exam results, leading to "moral hazards and delinquencies." As grading evolved, it shifted from a holistic approach to a standardized, objective system, driven by the expansion of American schooling in the early 1900s. This change aimed to ensure effective and uniform communication across academic institutions, making grades meaningful beyond individual colleges or universities. By the 1940s, the A-F system, combined with the 4.0 scale and the 100 percent system, became the dominant grading scheme (Schneider & Hutt, 2014). Grading on a curve, popular in large introductory STEM courses, aimed to reduce subjectivity but also fueled student competition    
+        </p>
+        <div class="image-row" style="margin-left: 870px; width: 1800px; margin-top: -380px; margin-bottom: 100px;">
+            <img src="horace-mann.png" width="500" height="500" style="border-width: 6px; border-style: ridge; border-color: rgb(255, 77, 77); border-radius: 200px;">
+        </div>
+        <h2 style="margin-left: 600px; margin-top: -70px;">Horace Mann</h2>
+    </div>
+        <script>
+            function myFunction() {
+              var element = document.body;
+              element.classList.toggle("dark-mode");
+            }
+
+            const nightContainer = document.querySelector(".night");
+            const nightBtn = document.querySelector(".night i");
+
+            nightContainer.addEventListener("click", function() {
+              nightBtn.classList.toggle("fa-sun");
+              nightBtn.classList.toggle("fa-moon");
+            });
+          </script>
+</body>
+</html>

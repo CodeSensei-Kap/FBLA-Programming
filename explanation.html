@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ae388f0d5c.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+          padding: 0px;
+          background-color: white;
+          color: black;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        .dark-mode {
+          background-color: rgb(15, 15, 15);
+          color: rgb(238, 238, 238);
+        }
+      </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a class="top" href="home.html">Home</a></li>
+            <li><a class="top" href="unweighted.html">Unweighted Calculator</a></li>
+            <li><a class="top" href="weighted.html">Weighted Calculator</a></li>
+            <li><a class="top" href="school.html">Williamsville East GPA System</a></li>
+            <li><a class="top" href="explanation.html">Importance of GPA</a></li>
+            <li><a class="top" href="history.html">History of the GPA</a></li>
+            <li style="float:right"><a class="top" href="about.html">Code Pics</a></li>
+          </ul>
+      </div>
+      <h1 class = "title">Importance of GPA</h1>
+      <div class="night" style="margin-left: 1350px; margin-top: -50px;">
+        <i class="fa-solid fa-moon fa-2x" onclick="myFunction()" style="border-radius: 15px; padding: 5px 5px; color: rgb(255, 223, 40);"></i>
+      </div>
+      <p style="font-size: larger; margin-left: 270px; margin-right: 270px;">GPA is a system that is a means to measure academic performance and a person's engagement in their learning. Having a high GPA can benefit you in many ways and that can really help you grow as a person and recieve high ranking opportunites as you progress throughout your educational journey. There are a multitude of reasons why the GPA system is important.</p>
+      <ol>
+        <li style="font-weight: bold; font-size: x-large; margin-left: 30px;">Top Universities</li>
+            <ol style="list-style-type: disc;">
+                <li style="margin-right: 900px; font-size: large;">Having a high GPA is a significant factor that catches the attention of top colleges across the nation. These prestigious institutions place great emphasis on your GPA during the admissions process because it genuinely plays a pivotal role in determining the acceptance of applicants into the coveted Top 20 schools. Moreover, a strong GPA not only reflects academic excellence but also demonstrates discipline, perseverance, and a commitment to learning.</li>
+                
+                <div style="margin-right: 50px;">
+                    <div class= image-container style="margin-left: 600px; margin-top: -280px;">
+                        <img src ="harvard-logo-transparent.png" width="500" height="500">
+                        <img src ="princeton-logo-300x300.png" width="500" height="500">           
+                        <img src ="stanford-university-logo-0.png" width="500" height="500">         
+                    </div>           
+                    <div style="margin-left: 800px; width: 1000px; height: 600px; margin-top: 50px; margin-bottom: -450px;">
+                        <img src ="R.png" width="500" height="500">           
+                        <img src ="UCLA-Logo-1996.png" width="500" height="500">  
+                    </div>
+                </div>  
+            </ol> 
+        <li style="font-weight: bold; font-size: x-large; margin-left: 30px;">Scholarships</li> 
+                <ol style="list-style-type: disc;">
+                    <li style="margin-right: 900px; font-size: large;">It can help your chances of recieving high ranking scholarships which help you even more in being able to pay for college and to further your education. It even helps for your eligibility for financial aid if you and/or your family have trouble in paying for your selected university. It helps by even being a way to make your continued education at a top university an easier and cheaper process. Since getting into a top university isn't simply all you must do, since you must also worry about expenses.</li>
+                    <div class="image-row" style="margin-bottom: 20px;">
+                        <img src ="gates-1.webp" style="margin-left: 450px; margin-top: -215px;">           
+                        <img src ="National-Merit-Scholarship-Program.png" style="margin-top: -140px; margin-left: 30px;">           
+                        <img src ="questbridge-logo-ed.jpg" style="margin-top: -250px;">
+                    </div> 
+                </ol>  
+        <li style="font-weight: bold; font-size: x-large; margin-left: 30px;">Academics</li> 
+            <ol style="list-style-type: disc;">
+                <li style="margin-right: 900px; font-size: large;">Through this system, you can show your willingness to challenge yourself and show top schools that you can meet as well as exceed average academic standards. The GPA system is a place where a student can really shine and show off their academic capabilites.</li>
+            </ol>    
+      </ol>
+      <script>
+        function myFunction() {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+        }
+
+        const nightContainer = document.querySelector(".night");
+        const nightBtn = document.querySelector(".night i");
+
+        nightContainer.addEventListener("click", function() {
+          nightBtn.classList.toggle("fa-sun");
+          nightBtn.classList.toggle("fa-moon");
+        });
+      </script>
+</body>
+</html>

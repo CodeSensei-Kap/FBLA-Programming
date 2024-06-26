@@ -1,0 +1,84 @@
+<html>
+<head>
+	<style>
+		body{
+			background-color: #FCFAF6;
+		}
+		.container {
+			width: 80%;
+			margin: 0 auto;
+       		background-color: #232323;
+	    	border: 1px solid #ddd;
+			box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1), -10px -10px 15px rgba(0, 0, 0, 0.1);
+			padding: 20px;
+			margin-top: 50px;
+			position: relative;
+			overflow: hidden;
+		}
+		
+		.box {
+			background-color: #111;
+			padding: 20px;
+			margin-bottom: 20px;
+			position: relative;
+			overflow: hidden;
+			border: 2px solid #ddd;
+			color: #fff;;
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.gpa-tips {
+			height: 400px;
+		}
+		
+		.faqs {
+			height: 400px;
+			background-color: #fafafa;
+			padding: 20px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+        	transition: all 0.5s ease;
+			transform: translateY(100%);
+			box-sizing: border-box;
+		}
+		
+		.container:hover .faqs {
+			transform: translateY(0);
+		}
+		</style>
+</head>
+<body>
+	<div class="container">
+    	<div class="box tips_faqs">
+			<h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif; color: #dc250c">Tips on using our GPA calculator:</h1>
+			<h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #e7c800;">What to enter into the fields</h2>
+			<ul>
+				<li style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Enter the name of the course.</li>
+				<li style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Enter how many credits the course is worth.</li>
+				<li style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Enter the grade which you have in the class.</li>
+			</ul>
+			<h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #e7c800;">What the buttons are used for</h2>
+			<ul>
+				<li style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Click the "Calculate" button to see your updated GPA.</li>
+				<li style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Use the "Clear" button to clear the contents and restart.</li>
+			</ul>
+			<h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif; color: #dc250c;">FAQs:</h1>
+			<ul>
+				<li style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">What does GPA stand for?</li> 
+				<p style="text-indent: 20px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">GPA stands for Grade Point Average</p>
+				<li style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">What is a good GPA?</li>
+				<p style="text-indent: 20px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">A good GPA varies depending on the field of study and the specific institution, but generally, a GPA of 3.5 or higher is considered good.</p>
+				<li style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">How is GPA calculated?</li>
+				<p style="text-indent: 20px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">GPA is calculated by assigning point values to grades and averaging those values.</p>
+				<li style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Can I improve my GPA?</li>
+				<p style="text-indent: 20px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Yes, you can improve your GPA by taking higher-level courses and getting better grades in those courses.</p>
+			</ul>
+		</div>
+        <a href="unweighted.html" target="_blank">
+            <button class="returnButton" style="background-color: #49ff92; border-width: 3px; border-color: #3cdc7c;">Back to Calculator</button>
+        </a>
+	</div>
+</body>
+</html>

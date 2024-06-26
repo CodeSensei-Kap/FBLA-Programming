@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ae388f0d5c.js" crossorigin="anonymous"></script>
+    <style>
+      body {
+        padding: 0px;
+        background-color: white;
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      
+      .dark-mode {
+        background-color: rgb(15, 15, 15);
+        color: rgb(238, 238, 238);
+      }
+    </style>
+</head>
+<body>
+    <div style="position: relative;">
+        <ul>
+            <li><a class="top" href="home.html">Home</a></li>
+            <li><a class="top" href="unweighted.html">Unweighted Calculator</a></li>
+            <li><a class="top" href="weighted.html">Weighted Calculator</a></li>
+            <li><a class="top" href="school.html">Williamsville East GPA System</a></li>
+            <li><a class="top" href="explanation.html">Importance of GPA</a></li>
+            <li><a class="top" href="history.html">History of the GPA</a></li>
+            <li style="float:right"><a class="top" href="about.html">Code Pics</a></li>
+          </ul>
+      </div>
+      <h1 class = "title" style="text-shadow: 2px 2px 5px red;">Made by</h1>
+      <div class="night" style="margin-left: 1350px; margin-top: -10px; margin-bottom: -50px;">
+        <i class="fa-solid fa-moon fa-2x" onclick="myFunction()" style="border-radius: 15px; padding: 5px 5px; color: rgb(255, 223, 40);"></i>
+      </div>
+      <h3 style="text-shadow: 4px 3px 3px rgb(230, 184, 0);">Naman Kapoor</h3>
+      <p style="margin-bottom: -85px; margin-left: 410px; font-size: large;">Please visit our github page for all of our files to view any one you choose!<br></p>
+      <p style="margin-left: 645px;"><a href="https://github.com/CodeSensei-Kap/intro" style="color: #0000FF;">| Github Link |</a></p>
+      <script>
+        function myFunction() {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+        }
+
+        const nightContainer = document.querySelector(".night");
+        const nightBtn = document.querySelector(".night i");
+
+        nightContainer.addEventListener("click", function() {
+          nightBtn.classList.toggle("fa-sun");
+          nightBtn.classList.toggle("fa-moon");
+        });
+      </script>
+</body>
+</html>

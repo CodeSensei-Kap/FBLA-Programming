@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GP Calculator</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ae388f0d5c.js" crossorigin="anonymous"></script>
+    <style media="all">
+      body {
+        padding: 0px;
+        background-color: white;
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      
+      .dark-mode {
+        background-color: rgb(15, 15, 15);
+        color: rgb(238, 238, 238);
+      }
+    </style>
+    <style media="all">
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        
+        .download-btn {
+          margin-top: -400px;
+          width: 100%;
+          height: 100vh;
+  
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .download-btn a {
+          text-decoration: none;
+          background-color: #0957e9;
+          color: #fff;
+          padding: 13px 22px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          border-radius: 4px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.4s;
+        }
+        .download-btn a span {
+          margin-right: 10px;
+        }
+        .download-btn a:hover {
+          background-color: #0545bb;
+          box-shadow: 3px 4px 2px 0px rgba(0, 0, 0, 0.226);
+        }
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        .back-btn {
+          margin-top: -800px;
+          width: 100%;
+          height: 100vh;
+  
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .back-btn a {
+          text-decoration: none;
+          background-color: #0ad890;
+          color: #fff;
+          padding: 13px 22px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          border-radius: 4px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.4s;
+        }
+        .back-btn a span {
+          margin-right: 10px;
+        }
+        .back-btn a:hover {
+          background-color: #08ab72;
+          box-shadow: 3px 4px 2px 0px rgba(0, 0, 0, 0.226);
+        }
+      </style>
+</head>
+<style>
+    @media print {
+        .noprint {
+            visibility: hidden;
+        }
+        .download-btn {
+            visibility: hidden;
+        }
+        .back-btn {
+            visibility: hidden;
+        }
+        .helpButton {
+            visibility: hidden;
+        }
+        .col {
+            visibility: hidden;
+        }
+        .night {
+            visibility: hidden;
+        }
+    }
+</style>
+<body>
+    <h1 class="page-headers">
+        Transcript
+    </h1>
+    <div class="night" style="margin-left: 1350px; margin-top: -10px;">
+        <i class="fa-solid fa-moon fa-2x" onclick="myFunction()" style="border-radius: 15px; padding: 5px 5px; color: rgb(255, 223, 40); margin-top: -30px; margin-bottom: 30px;"></i>
+    </div>
+    <h5 class="noprint" style="margin-left: 673px; margin-bottom: 40px; margin-top: -50px;">
+        ~Unweighted~
+    </h5>
+    <div class="wrapper" id="page">
+        <div class="form-row" style="margin-right: -400px;">
+            <div class="col">
+                <input id="course-code" class="form-control" type="text" placeholder="Course Name">
+            </div>
+            <div class="col">
+                <input id="unit-load" class="form-control" type="number" placeholder="Credits" min="1" max="3">
+            </div>
+            <div class="col">
+                <input id="gradeInput" class="form-control" type="number" oninput="validateInput(this, 100)" placeholder="Grade" min="0" max="100">
+            </div>
+            <div class="col">
+                <input id="add" class="btn btn-primary" type="button" value="Add">
+            </div>
+        </div>
+        <table id="table" class="table table-bordered display-none" bgColor="#E53D00">
+            <thead>
+                <tr>
+                    <th>Course Name</th>
+                    <th>Credits</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+        
+            </tbody>
+            <tfoot id="tfoot">
+        
+            </tfoot>
+        </table>
+        <div class="row">
+            <div class="col">
+                <input id="calc-gp" class="btn btn-success display-none" type="button" value="Calculate GPA"> <!-- Calculate Button -->
+            </div>
+            <div class="col">
+            <input id="clear" class="btn btn-warning display-none" type="button" value="Clear"> <!-- Clear Button -->
+            </div>
+        </div>
+        <p class="noprint" style="margin-left: 350px; font-size: large; margin-bottom: -100px; font-weight: 600;">
+            Make sure to press "Calculate GPA" before Downloading the file!
+        </p>
+        <div class="download-btn" style="margin-top: -350px;">
+            <a href="#"><span><img src="icon.svg" alt="" style="width: 30px; height: 30px;"/></span>Download</a>
+        </div>
+        <div class="back-btn" style="margin-top: -620px;">
+            <a href="unweighted.html"><span><img src="back.svg" alt="" style="width: 30px; height: 30px;"/></span>Back to Calculator</a>
+        </div>
+        <script src="download.js"></script>
+    </div>
+    <script>
+        function myFunction() {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+        }
+
+        const nightContainer = document.querySelector(".night");
+        const nightBtn = document.querySelector(".night i");
+
+        nightContainer.addEventListener("click", function() {
+          nightBtn.classList.toggle("fa-sun");
+          nightBtn.classList.toggle("fa-moon");
+        });
+      </script>
+    <script src="unweighted.js"></script>
+</body>
+</html>

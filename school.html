@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ae388f0d5c.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  body {
+    padding: 0px;
+    background-color: white;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .dark-mode {
+    background-color: rgb(15, 15, 15);
+    color: rgb(238, 238, 238);
+  }
+</style>
+<style>
+  .para{
+    margin-top: -80px;
+  }
+</style>
+<body>
+    <div>
+        <ul>
+          <li><a class="top" href="home.html">Home</a></li>
+          <li><a class="top" href="unweighted.html">Unweighted Calculator</a></li>
+          <li><a class="top" href="weighted.html">Weighted Calculator</a></li>
+          <li><a class="top" href="school.html">Williamsville East GPA System</a></li>
+          <li><a class="top" href="explanation.html">Importance of GPA</a></li>
+          <li><a class="top" href="history.html">History of the GPA</a></li>
+          <li style="float:right"><a class="top" href="about.html">Code Pics</a></li>
+          </ul>
+      </div>
+      <h1 class = "title">How Does Williamsville East Calculate Its GPA?</h1>
+      <div class="night" style="margin-left: 1350px; margin-top: -50px;">
+        <i class="fa-solid fa-moon fa-2x" onclick="myFunction()" style="border-radius: 15px; padding: 5px 5px; color: rgb(255, 223, 40);"></i>
+      </div>
+      <div class="wrapper" style="margin-left: 50px;">
+        <p>Williamsville East High School is one of the most competitive high schools in New York State. It is a cultural haven for many children of all sorts of backgrounds. The environment here at East is friendly, welcoming and competitive. Students are involved in many extracurriculars such as sports, musical lessons, musical performances, and various talents. These students also manage to balance their grades while focusing on other activities.
+        </p>
+        <p class="para">
+          Williamsville East has a harsh grading curve and many challenging courses. Along with regular regents-level classes, East has honors classes for students who want a challenge. Furthermore, East has 20+ AP classes for students to take. The teachers are highly certified as New York has one of the highest requirements for becoming a teacher. These AP classes have college-level material for students who are heavily interested in a certain topic. Then, East has an array of business and engineering electives for students to take. At East, you might see a kid selling smoothies for Entrepreneurship, a kid welding a table for Automotive Technology, or even a child writing a Java application in one of our Tech Labs. There are also Non-Regents classes for those who want to take it slowly. With such a plethora of options to choose from, kids can learn about things they are truly passionate about. 
+        </p>
+        <p class="para">
+          Now, East calculates it’s students’ GPA by using a scale. Students turn in assignments for their classes and these assignments are graded. The grades are on a website called WITS, so students can log on and monitor their grades. Grades range from 0-100 and a 65 minimum is required to pass a class. The school year is divided into 4 marking periods, with each being 10 weeks long. There is a final exam and teachers may give out optional midterms. The teacher decides how much to weigh the final exam. One might have it be worth 10% and other could do 25%. 
+        </p>
+        <p class="para">
+          Example Grades for Chesmistry:
+        </p>
+        <p class="para">
+          Marking Period 1: 97
+        </p>
+        <p class="para">
+          Marking Period 1: 98
+        </p>
+        <p class="para">
+          Marking Period 1: 98
+        </p>
+        <p class="para">
+          Marking Period 1: 96
+        </p>
+        <p class="para">
+          Final Exam: 97 (15%)
+        </p>
+        <p class="para">
+          Student’s final grade for Chemistry would be a 97. If the average is below a 65, then they will have to retake the course if it’s mandatory for graduation. 
+        </p>
+        <p class="para">
+          Then, the conversion scale is used to convert the numerical grade to an alphabetical grade. East uses the scale shown below:
+        </p>
+        <div class="abcd">
+          <img src ="grading.png" style="width: 400px; height: 225px;"> 
+        </div>
+        <div class="abcd">
+          <p>
+          Next, it follows the College Board’s scale of alphabetical grade to grade out of 4.0. 
+          </p>
+          <div style="margin-bottom: 100px;">
+              <img src ="grading2.png" style="width: 450px; height: 450px;"> 
+          </div>
+        </div>
+        <p class="para">
+          For our Chemistry class, a 97 correlates to an “A” This equals a 4.0 for the GPA scale.
+        </p>
+        <p class="para">
+          Now, repeat this process for all of your classes to find the unweighted values. Next, use this formula:
+        </p>
+        <p class="para">
+          Unweighted GPA = Sum of all Unweighted Values / Number of courses taken
+        </p>
+        <p class="para">
+          This will be your Unweighted GPA.
+        </p>
+        <p class="para">
+          For Weighted GPA, all East does is apply a booster based on the level of the class. Regents classes have no multipliers, Honors classes have a + 0.5 boost, and AP classes have a +1.0 boost. Using this apply the same steps as before:
+        </p>
+        <p class="para">
+          <ol>
+            <li>Calculate the numerical grade of your class</li>
+            <li>Convert Grade to Number</li>
+            <li>Convert Number to GPA Number</li>
+            <li>Apply Booster if Applicable</li>
+            <li>Repeat For All of your classes</li>
+          </ol>
+        </p>
+        <p class="para">
+          The formula is nearly identical:
+        </p>
+        <p class="para">
+          Weighted GPA = Sum of all Weighted Values / Number of courses taken
+        </p>
+        <p class="para">
+          Our calculator’s goal is to help users save time by doing the math for them. We want to give them an easy way to calculate their GPA by plugging in numbers. By reading this, we hope you have learned how to convert your grades to your GPA. Make sure to keep studying hard.
+        </p>
+      </div>
+      <script>
+        function myFunction() {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+        }
+
+        const nightContainer = document.querySelector(".night");
+        const nightBtn = document.querySelector(".night i");
+
+        nightContainer.addEventListener("click", function() {
+          nightBtn.classList.toggle("fa-sun");
+          nightBtn.classList.toggle("fa-moon");
+        });
+      </script>
+</body>
+</html>
